@@ -38,4 +38,8 @@ rfetch(label_col = "31", value_col = "37")
 
 <img width="920" height="836" alt="Screenshot (150)" src="https://github.com/user-attachments/assets/70b28aeb-f0a9-4cb8-b44a-cae0f938cf7a" />
 
+## Known Issues
+
+- **Windows 11 displays as Windows 10**: This is by design for compatibility issues so that softwares doesn't stop installing because it thinks that Windows 11 is an unsupported operating system.
+
 Inspired by [neofetch](https://github.com/dylanaraps/neofetch).
