@@ -7,11 +7,11 @@
 #' str(info)
 #' @export
 rfetch_info <- function() {
-  # safely get RStudio version
+  # get RStudio version
   if (exists("RStudio.Version")) {
     rstudio_version <- try(RStudio.Version(), silent = TRUE)
     if (!inherits(rstudio_version, "try-error")) {
-      rstu_ver <- paste("RStudio", rstudio_version$version)
+      rstu_ver <- paste(rstudio_version$release_name, rstudio_version$version)
     } else {
       rstu_ver <- "Not in RStudio"
     }
