@@ -36,18 +36,6 @@ rfetch(label_col = "31", value_col = "37")
 
 ## Example Output
 
-```
-:@@@@@@@@@@%%#+-     User: abc
-:@@@@@@@@@@@@@@@#    Host: laptop
-:@@@@@=   .+@@@@@+   OS: Windows 10
-:@@@@@-     @@@@@*   RStudio: 2023.12.1
-:@@@@@=   .+@@@@%.   R: 4.3.2
-:@@@@@@@@@@@@@#=.    Packages: 157
-:@@@@@@@@@@@@@#-     Theme: Default
-:@@@@@=  .=@@@@@#    
-:@@@@@-    .%@@@@%.  ████████████
-:@@@@@-     .%@@@@%. ████████████
-:@@@@@-      .%@@@@#
-```
+<img width="920" height="836" alt="Screenshot (150)" src="https://github.com/user-attachments/assets/70b28aeb-f0a9-4cb8-b44a-cae0f938cf7a" />
 
 Inspired by [neofetch](https://github.com/dylanaraps/neofetch).
