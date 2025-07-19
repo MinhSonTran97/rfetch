@@ -52,32 +52,14 @@ rfetch <- function(info = NULL, logo = NULL, theme = NULL, label_col = NULL, val
 
   # setup logo
   if (is.null(logo)) {
-    # default R logo
-    default_logo <- c(
-      " :@@@@@@@@@@%%#+-    ",
-      ":@@@@@@@@@@@@@@@#   ",
-      ":@@@@@=   .+@@@@@+  ",
-      ":@@@@@-     @@@@@*  ",
-      ":@@@@@=   .+@@@@%.  ",
-      ":@@@@@@@@@@@@@#=.   ",
-      ":@@@@@@@@@@@@@#-    ",
-      ":@@@@@=  .=@@@@@#   ",
-      ":@@@@@-    .%@@@@%. ",
-      ":@@@@@-     .%@@@@%.",
-      ":@@@@@-      .%@@@@#"
-    )
-    
-    #  default logo
+    # start with default logo
     logo_lines <- default_logo
     
-    # try to get specific RStudio logo
+    # try to get RStudio-specific logo
     rstudio_version <- try(if (exists("RStudio.Version")) RStudio.Version() else stop(), silent = TRUE)
     
     if (!inherits(rstudio_version, "try-error")) {
-      logo_file <- paste0("./logo/", rstudio_version$release_name, ".txt")
-      if (file.exists(logo_file)) {
-        logo_lines <- readLines(logo_file, warn = FALSE)
-      }
+      logo_lines <- get_rstudio_logo(rstudio_version$release_name)
     }
   } else {
     logo_lines <- logo
