@@ -36,7 +36,7 @@ rfetch(label_col = "31", value_col = "37")
 
 ## Example Output
 
-<img width="920" height="836" alt="Screenshot (150)" src="https://github.com/user-attachments/assets/70b28aeb-f0a9-4cb8-b44a-cae0f938cf7a" />
+<img width="556" height="580" alt="Screenshot (151)" src="https://github.com/user-attachments/assets/ee6d4650-3846-4ff3-bb57-f88b5be96dd0" />
 
 ## Known Issues
 
