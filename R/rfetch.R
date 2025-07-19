@@ -108,7 +108,7 @@ rfetch <- function(info = NULL, logo = NULL, theme = NULL, label_col = NULL, val
   theme_names <- c("Default", "Mono", "Rainbow", "Matrix", "Fire", "Ocean", "Sunset", "Forest", "Vintage", "Neon", "Minimal", "Pastel")
 
   line1 <- paste0(
-    paste0("\033[", .rfetch_env$themes[["Default"]]$label, "m###\033[0m"),
+    paste0(" \033[", .rfetch_env$themes[["Default"]]$label, "m###\033[0m"),
     paste0("\033[", .rfetch_env$themes[["Mono"]]$label,    "m###\033[0m"),
     paste0("\033[", .rfetch_env$themes[["Rainbow"]]$label, "m###\033[0m"),
     paste0("\033[", .rfetch_env$themes[["Matrix"]]$label,  "m###\033[0m"),
@@ -117,7 +117,7 @@ rfetch <- function(info = NULL, logo = NULL, theme = NULL, label_col = NULL, val
   )
 
   line2 <- paste0(
-    paste0("\033[", .rfetch_env$themes[["Sunset"]]$label,  "m###\033[0m"),
+    paste0(" \033[", .rfetch_env$themes[["Sunset"]]$label,  "m###\033[0m"),
     paste0("\033[", .rfetch_env$themes[["Forest"]]$label,  "m###\033[0m"),
     paste0("\033[", .rfetch_env$themes[["Vintage"]]$label, "m###\033[0m"),
     paste0("\033[", .rfetch_env$themes[["Neon"]]$label,    "m###\033[0m"),
