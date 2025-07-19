@@ -1,0 +1,54 @@
+---
+title: 'Exercise Sheet #6'
+subtitle: "Fortgeschrittene Statistische Software für NF"
+author: "Minh Son Tran (12424799)"
+date: "2025-07-19"
+output: distill::distill_article
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.align  = "center"
+)
+```
+
+## Exercise 1 : Building an R Package
+
+### Functionality Requirements
+
+I have successfully created the **rfetch** R package that meets all
+specified requirements:
+
+-   Working R package with proper functionality
+-   Package is installable via GitHub
+-   Contains 3 exported functions: `rfetch()`, `rfetch_info()`,
+    `rfetch_theme()`
+-   Documentation generated and up-to-date via `devtools::document()`
+-   DESCRIPTION file properly formatted with dependencies and metadata
+
+### Submission
+
+#### a) Package Description
+
+The **rfetch** package is a neofetch-style system information display
+tool for R that shows user, host, OS, R version, and package information
+with customizable color themes and ASCII logos. I chose this
+functionality because it combines practical system information gathering
+with visual appeal, making it useful for R users who want to showcase
+their setup in a visually pleasing format similar to popular
+command-line fetch tools.
+
+#### b) GitHub Repository URL
+
+<https://github.com/MinhSonTran97/rfetch>
+
+#### c) Installation Command
+
+```{r, eval=FALSE}
+remotes::install_github("MinhSonTran97/rfetch")
+```
+
+**Installation tested and confirmed working.**

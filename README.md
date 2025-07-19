@@ -20,7 +20,7 @@ rfetch()
 rfetch(theme = "Matrix")
 rfetch_theme(name = "Fire")
 
-# Custom colors
+# Custom colors using ANSI colour code
 rfetch(label_col = "31", value_col = "37")
 ```
 

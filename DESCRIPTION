@@ -1,6 +1,6 @@
 Package: rfetch
 Title: Neofetch‑Style System Information in R
-Version: 0.0.0.9000
+Version: 0.1
 Authors@R: 
     person("Son", "Tran", , "son.tran@campus.lmu.de", role = c("aut", "cre"))
 Description: Display colourful, ASCII-art blocks (like Neofetch) with key system info inside the R console.
