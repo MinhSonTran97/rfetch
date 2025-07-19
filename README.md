@@ -5,7 +5,7 @@ A neofetch-style system information display tool for R with customizable themes.
 ## Installation
 
 ```r
-remotes::install_github("yourusername/rfetch")
+remotes::install_github("MinhSonTran97/rfetch")
 ```
 
 ## Usage

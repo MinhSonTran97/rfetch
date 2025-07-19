@@ -54,7 +54,7 @@ rfetch <- function(info = NULL, logo = NULL, theme = NULL, label_col = NULL, val
   if (is.null(logo)) {
     # default R logo
     default_logo <- c(
-      ":@@@@@@@@@@%%#+-    ",
+      " :@@@@@@@@@@%%#+-    ",
       ":@@@@@@@@@@@@@@@#   ",
       ":@@@@@=   .+@@@@@+  ",
       ":@@@@@-     @@@@@*  ",
