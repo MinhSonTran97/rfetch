@@ -24,7 +24,7 @@ rfetch(
 
 \item{value_col}{ANSI colour code for values for this display only.}
 
-\item{fields}{Character vector of field names for this display only.}
+\item{logo_col}{ANSI colour code for logo for this display only.}
 }
 \value{
 Invisibly returns the printed character vector.

@@ -5,7 +5,7 @@
 #' @param theme      Name of a registered theme for this display only (doesn't change default).
 #' @param label_col  ANSI colour code for labels for this display only.
 #' @param value_col  ANSI colour code for values for this display only.
-#' @param fields     Character vector of field names for this display only.
+#' @param logo_col   ANSI colour code for logo for this display only.
 #' @return Invisibly returns the printed character vector.
 #'
 #' @examples
@@ -108,21 +108,21 @@ rfetch <- function(info = NULL, logo = NULL, theme = NULL, label_col = NULL, val
   theme_names <- c("Default", "Mono", "Rainbow", "Matrix", "Fire", "Ocean", "Sunset", "Forest", "Vintage", "Neon", "Minimal", "Pastel")
 
   line1 <- paste0(
-    paste0("\033[", .rfetch_env$themes[["Default"]]$label, "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Mono"]]$label,    "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Rainbow"]]$label, "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Matrix"]]$label,  "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Fire"]]$label,    "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Ocean"]]$label,   "m███\033[0m")
+    paste0("\033[", .rfetch_env$themes[["Default"]]$label, "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Mono"]]$label,    "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Rainbow"]]$label, "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Matrix"]]$label,  "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Fire"]]$label,    "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Ocean"]]$label,   "m###\033[0m")
   )
 
   line2 <- paste0(
-    paste0("\033[", .rfetch_env$themes[["Sunset"]]$label,  "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Forest"]]$label,  "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Vintage"]]$label, "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Neon"]]$label,    "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Minimal"]]$label, "m███\033[0m"),
-    paste0("\033[", .rfetch_env$themes[["Pastel"]]$label,  "m███\033[0m")
+    paste0("\033[", .rfetch_env$themes[["Sunset"]]$label,  "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Forest"]]$label,  "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Vintage"]]$label, "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Neon"]]$label,    "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Minimal"]]$label, "m###\033[0m"),
+    paste0("\033[", .rfetch_env$themes[["Pastel"]]$label,  "m###\033[0m")
   )
 
   info_lines <- c(info_lines, line1, line2)
